@@ -1,0 +1,81 @@
+.our-team {
+    background-color: var(--third-bg);
+    text-align: center;
+}
+
+.our-team-list {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.our-team-title {
+    display: inline-block;
+    @include font(36px, 1.16, 700, 0.03em);
+    color: var(--second-text-color);
+}
+
+.our-team-card {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.our-team-name {
+    @include font(16px, 1.18, 500, 0.03em);
+    color: var(--second-text-color);
+}
+
+.our-team-item {
+    margin-top: 10px;
+    @include font(16px, 1.18, null, 0.03em);
+}
+
+.our-team-block {
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+.our-team-svg-blok {
+    padding-bottom: 30px;
+}
+
+.team-svg-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    height: 44px;
+    width: 206px;
+    margin-left: 32px;
+}
+
+.team-svg-item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.team-svg-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    @include flex;
+    justify-content: center;
+    fill: #AFB1B8;
+    transition: background-color var(--trans-dur) var(--transition-timing-function),
+        fill var(--trans-dur) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+
+    }
+
+    &:hover,
+    &:focus {
+        fill: #FFFFFF;
+
+    }
+}

@@ -1,0 +1,211 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 300ms linear, visibility 300ms linear;
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 300ms linear;
+
+    width: 528px;
+    min-height: 581px;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+}
+
+.modal-title {
+    @include font(20px, 1.15, 700, 0.03em);
+    text-align: center;
+    color: var(--second-text-color);
+    margin-bottom: 12px;
+}
+
+.modal-field {
+    margin-top: 10px;
+}
+
+.modal-input {
+    margin-top: 4px;
+    padding-left: 42px;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    font-size: 18px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+        border-color: var(--accent-color);
+    }
+}
+
+.modal-label {
+    @include font(12px, 1.16, null, 0.01em);
+    color: var(--main-color);
+}
+
+.form-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .modal-input:focus + &{
+        fill: #2196F3;
+    }
+}
+
+.form-icon-name {
+    width: 12px;
+    height: 12px;
+}
+
+.form-icon-phone {
+    width: 13px;
+    height: 13px;
+}
+
+.form-icon-envelope {
+    width: 15px;
+    height: 12px;
+}
+
+.input-block {
+    position: relative;
+
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+
+.modal-textarea {
+    margin-top: 4px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 120px;
+    resize: none;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+        border-color: var(--accent-color);
+    }
+    &::placeholder {
+        @include font(12px, 1.16, 400, 0.01em);
+        color: rgba(117, 117, 117, 0.5);
+    
+    }
+}
+
+.checkbox-block {
+    @include flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+.form-checkbox {
+    @include font(14px, 1.71, 400, 0.03em);
+    color: #757575;
+    @include flex;
+}
+
+.form-checkbox span {
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 3px;
+    @include flex;
+    justify-content: center;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .input-checkbox:checked+& {
+        background-color: var(--accent-color);
+        fill: var(--hero-foot-bg);
+        border: none;
+    }
+    
+    .input-checkbox:focus+&{
+        border-color: var(--accent-color);
+    }
+}
+
+.button-form {
+    width: 200px;
+    height: 50px;
+    background: var(--accent-color);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    @include font(16px, 1.87, 700, 0.06em);
+    color: var(--hero-foot-bg);
+}
+
+.button-form-block {
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+.input-checkbox {
+    margin-top: 20px;
+    margin-right: 9px;
+    @include font(14px, 1.71, null, 0.03em);
+    color: var(--main-color);
+}
+
+.lcens-link {
+    margin-left: 4px;
+    color: var(--accent-color);
+}
+
+
+.backdrop.is-hidden .modal {
+
+    transform: translate(-50%, -50%) scale(0);
+}
+
+
+.modal-button {
+    position: absolute;
+    background-color: transparent;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    @include flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    &:focus,
+    &:hover {
+        fill: var(--accent-color);
+    }
+}
+
+
+
+

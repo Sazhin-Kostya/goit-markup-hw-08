@@ -1,0 +1,45 @@
+.example-work {
+    text-align: center;
+    background-color: var(--main-bg)
+}
+
+.example-work__title {
+    @include font(36px, 1.16, 700, 0.03em);
+    color: var(--second-text-color);
+}
+
+.example-work__list {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    list-style-type: none;
+
+}
+
+.example-work__box {
+    position: relative;
+
+}
+
+.example-work__block {
+    @include flex;
+    justify-content: center;
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+
+}
+
+.examle-work__text {
+    @include font(14px, 1.14, 700, 0.03em);
+    text-transform: uppercase;
+    color: var(--hero-foot-bg);
+}
+
+
+
+
+
+

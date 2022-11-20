@@ -1,0 +1,25 @@
+:root {
+    --main-color: #757575;
+    --second-text-color: #212121;
+    --accent-color: #2196F3;
+    --main-bg: #FFFFFF;
+    --second-bg: #C4C4C4;
+    --third-bg: #F5F4FA;
+    --hero-foot-bg: #FFFFFF;
+    --foot-text-color: rgba(255, 255, 255, 0.6);
+    --trans-dur: 250ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin font ($size, $height, $weight, $spacing){
+    font-weight: $weight;
+    font-size:  $size;
+    line-height:  $height;
+    letter-spacing: $spacing;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
