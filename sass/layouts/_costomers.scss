@@ -10,6 +10,9 @@
     list-style: none;
     gap: 30px;
     margin-top: 50px;
+    @media screen and (min-width:1200px) {
+    flex-wrap: nowrap;
+    }
 }
 
 .regular-customers-item {
@@ -17,6 +20,9 @@
     height: 92px;
     @media screen and (min-width:768px) {
        width: calc(100% / 3 - 30px);
+    }
+    @media screen and (min-width:1200px) {
+        width: calc((100% - 150px) / 6);
     }
 }
 

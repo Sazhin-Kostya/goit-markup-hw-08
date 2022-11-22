@@ -1,6 +1,10 @@
 .example-work {
+    display: none;
     text-align: center;
-    background-color: var(--main-bg)
+    background-color: var(--main-bg);
+    @media screen and (min-width:1200px) {
+        display: block;
+    }
 }
 
 .example-work__title {

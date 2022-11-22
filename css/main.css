@@ -577,8 +577,14 @@ body {
 }
 
 .example-work {
+  display: none;
   text-align: center;
   background-color: var(--main-bg);
+}
+@media screen and (min-width: 1200px) {
+  .example-work {
+    display: block;
+  }
 }
 
 .example-work__title {
@@ -736,6 +742,11 @@ body {
   gap: 30px;
   margin-top: 50px;
 }
+@media screen and (min-width: 1200px) {
+  .regular-customers-list {
+    flex-wrap: nowrap;
+  }
+}
 
 .regular-customers-item {
   width: calc((100% - 30px) / 2);
@@ -744,6 +755,11 @@ body {
 @media screen and (min-width: 768px) {
   .regular-customers-item {
     width: calc(33.3333333333% - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .regular-customers-item {
+    width: calc((100% - 150px) / 6);
   }
 }
 
@@ -886,9 +902,26 @@ body {
 }
 
 .foot-block {
-  display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
+  text-align: center;
+  /* display: flex;
+   justify-content: flex-end;
+   align-items: baseline;*/
+}
+@media screen and (min-width: 768px) {
+  .foot-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    text-align: start;
+  }
 }
 
 .foot {
@@ -896,7 +929,17 @@ body {
 }
 
 .foot-contact-block {
-  margin-right: 94px;
+  /*margin-right: 94px;*/
+}
+@media screen and (min-width: 768px) {
+  .foot-contact-block {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot-contact-block {
+    margin-right: 94px;
+  }
 }
 
 .foot {
@@ -911,7 +954,7 @@ body {
   letter-spacing: 0.03em;
   white-space: nowrap;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 28px;
   color: var(--hero-foot-bg);
   transition: color var(--trans-dur) var(--transition-timing-function);
 }
@@ -929,7 +972,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   display: inline-block;
-  margin-top: 9px;
+  margin-top: 12px;
   color: var(--foot-text-color);
   text-decoration: none;
   transition: color var(--trans-dur) var(--transition-timing-function);
@@ -939,7 +982,12 @@ body {
 }
 
 .foot-mailing-block {
-  margin-left: 93px;
+  /*margin-left: 93px;*/
+}
+@media screen and (min-width: 1200px) {
+  .foot-mailing-block {
+    margin-left: 93px;
+  }
 }
 
 .foot-social-title {
@@ -947,17 +995,21 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
+  margin-top: 60px;
   text-transform: uppercase;
   color: var(--hero-foot-bg);
 }
 
 .foot-social-list {
   display: flex;
+  align-items: center;
   list-style-type: none;
   gap: 10px;
   height: 44px;
   width: 206px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .foot-social-svg {
@@ -986,13 +1038,19 @@ body {
 }
 
 .foot-form-block {
-  display: flex;
-  gap: 12px;
+  /*display: flex;
+  gap: 12px;*/
   margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .foot-form-block {
+    display: flex;
+    gap: 12px;
+  }
 }
 
 .foot-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1024,11 +1082,22 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 768px) {
+  .foot-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot-input {
+    width: 358px;
+  }
+}
 
 .foot-email-title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin-top: 60px;
   text-transform: uppercase;
   color: var(--hero-foot-bg);
 }
@@ -1038,6 +1107,9 @@ body {
   align-items: center;
   width: 200px;
   height: 50px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1048,6 +1120,11 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .foot-button {
+    margin-top: 0;
+  }
 }
 
 .foot-send-svg {
