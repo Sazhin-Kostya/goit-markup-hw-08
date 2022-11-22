@@ -6,14 +6,18 @@
 
 .regular-customers-list {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     gap: 30px;
     margin-top: 50px;
 }
 
 .regular-customers-item {
-    width: calc((100% - 150px) / 6);
+    width: calc((100% - 30px) / 2);
     height: 92px;
+    @media screen and (min-width:768px) {
+       width: calc(100% / 3 - 30px);
+    }
 }
 
 
