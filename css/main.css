@@ -754,7 +754,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .regular-customers-item {
-    width: calc(33.3333333333% - 30px);
+    /* width: calc(100% / 3 - 30px);*/
+    width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1128,5 +1129,6 @@ body {
 }
 
 .foot-send-svg {
+  padding-left: 10px;
   fill: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
