@@ -206,8 +206,10 @@ body {
 }
 
 .menu__open {
+  position: absolute;
   background: transparent;
   border: none;
+  top: 22px;
 }
 
 .logo {
