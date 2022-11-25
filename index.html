@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--<header class="header">
+    <header class="header">
       <div class="container header__contact">
         <nav class="header__nav">
           <a href="./index.html" class="logo link"
@@ -59,9 +59,14 @@
           </li>
         </ul>
       </div>
-    </header>-->
+      <button type="button" class="menu__open">
+        <svg class="contact__svg" width="24" height="16">
+          <use href="./images/symbol-defs.svg#icon-menu-24px"></use>
+        </svg>
+      </button>
+    </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">
             Ефективні рішення для<br />
@@ -71,7 +76,7 @@
             Замовити послугу
           </button>
         </div>
-      </section>-->
+      </section>
       <section class="benefits section benefits__section">
         <div class="container">
           <h2 class="visually-hidden">Плюси співпрраці з нами</h2>
@@ -175,11 +180,34 @@
           <h2 class="our-team-title">Наша команда</h2>
           <ul class="our-team-list">
             <li class="our-team-card">
-              <img
-                src="./images/Demiyanenko.jpg"
-                alt="Фото Ігора Дем'яненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Demiyanenko-desk-1x.jpg 1x,
+                    ./images/Demiyanenko-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/Demiyanenko-tub-1x.jpg 1x,
+                    ./images/Demiyanenko-tub-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/Demiyanenko-mob-1x.jpg 1x,
+                    ./images/Demiyanenko-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/Demiyanenko-mob-1x.jpg"
+                  alt="Фото Ігора Дем'яненко"
+                  width="450"
+                />
+              </picture>
               <div class="our-team-block">
                 <h3 class="our-team-name">Ігор Дем'яненко</h3>
                 <p class="our-team-item">Product Designer</p>
@@ -225,11 +253,34 @@
               </div>
             </li>
             <li class="our-team-card">
-              <img
-                src="./images/Repena.jpg"
-                alt="Фото Ольги Репіної"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Repena-desk-1x.jpg 1x,
+                    ./images/Repena-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/Repena-tub-1x.jpg 1x,
+                    ./images/Repena-tub-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/Repena-mob-1x.jpg 1x,
+                    ./images/Repena-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/Repena-mob-1x.jpg"
+                  alt="Фото Ольги Репіної"
+                  width="450"
+                />
+              </picture>
               <div class="our-team-block">
                 <h3 class="our-team-name">Ольга Рєпіна</h3>
                 <p class="our-team-item">Frontend Developer</p>
@@ -275,11 +326,34 @@
               </div>
             </li>
             <li class="our-team-card">
-              <img
-                src="./images/Tarasov.jpg"
-                alt="Фото Миколи Тарасова"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Tarasov-desk-1x.jpg 1x,
+                    ./images/Tarasov-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/Tarasov-tub-1x.jpg 1x,
+                    ./images/Tarasov-tub-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/Tarasov-mob-1x.jpg 1x,
+                    ./images/Tarasov-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/Tarasov-mob-1x.jpg"
+                  alt="Фото Миколи Тарасова"
+                  width="450"
+                />
+              </picture>
               <div class="our-team-block">
                 <h3 class="our-team-name">Микола Тарасов</h3>
                 <p class="our-team-item">Marketing</p>
@@ -325,11 +399,34 @@
               </div>
             </li>
             <li class="our-team-card">
-              <img
-                src="./images/Ermakov.jpg"
-                alt="Фото Михайла Єрмакова"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Ermakov-desk-1x.jpg 1x,
+                    ./images/Ermakov-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/Ermakov-tub-1x.jpg 1x,
+                    ./images/Ermakov-tub-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/Ermakov-mob-1x.jpg 1x,
+                    ./images/Ermakov-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/Ermakov-mob-1x.jpg"
+                  alt="Фото Михайла Єрмакова"
+                  width="450"
+                />
+              </picture>
               <div class="our-team-block">
                 <h3 class="our-team-name">Михайло Єрмаков</h3>
                 <p class="our-team-item">UI Designer</p>
