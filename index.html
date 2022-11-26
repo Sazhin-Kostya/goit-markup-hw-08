@@ -58,9 +58,57 @@
             >
           </li>
         </ul>
-        <button type="button" class="menu__open">
+        <button type="button" class="menu__open" data-menu-open>
           <svg class="contact__svg" width="24" height="16">
             <use href="./images/symbol-defs.svg#icon-menu-24px"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a href="./index.html" class="link mob-link-nav"> Студія</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="./portfolio.html" class="link mob-link-nav">Портфоліо</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="./contacts.html" class="link mob-link-nav">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="mob-list-nav">
+            <li class="mob-list-item">
+              <a href="tel:+380961111111" class="link mob-link-number">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob-list-email">
+              <a href="mailto:info@devstudio.com" class="link mob-link-email">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mob-soc-list">
+            <li class="mob-soc-item">
+              <a href="#" class="mob-soc-link link">Instagram</a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="#" class="mob-soc-link link">Twitter</a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="#" class="mob-soc-link link">Facebook</a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="#" class="mob-soc-link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="button-close-mob" data-menu-close>
+          <svg class="mob-menu-close" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close-2"></use>
           </svg>
         </button>
       </div>
@@ -703,5 +751,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

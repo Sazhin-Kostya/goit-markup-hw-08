@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     background-color: var(--main-bg);
     border-bottom: 1px solid #ECECEC;
 }
@@ -97,8 +98,6 @@
     margin-right: 93px;
 }
 
-
-
 .contact__svg {
     margin-right: 10px;
     fill: currentColor;
@@ -109,9 +108,126 @@
     height: 40px;
     background:transparent;
     border: none;
-    margin-top: auto;
+    margin-top: 12px;
     margin-bottom: auto;
-    margin-right: 23px;
+    margin-right: 10px;
     padding: 0;
 }
+
+.menu__open:focus,
+.menu__open:hover{
+    fill: var(--accent-color);
+}
  
+.mob-menu{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    padding-top: 48px;
+    padding-left: 40px;
+    padding-bottom: 48px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: #ECECEC;
+}
+
+.mob-menu-list{
+    padding: 0;
+    list-style-type: none;
+}
+
+.mob-menu-item:not(:last-child){
+    margin-bottom: 32px; 
+}
+
+
+.mob-link-nav{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47/42);
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+}
+
+.mob-link-nav:focus,
+.mob-link-nav:hover{
+    color: var(--accent-color);
+}
+
+.mob-list-nav{
+    margin-top: 33px;
+    list-style-type: none;
+}
+
+
+.mob-link-number{
+    
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40/34);
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+.mob-list-email{
+    margin-top: 32px;
+}
+
+.mob-link-email{
+    
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28/24);
+    letter-spacing: 0.02em;    
+    color: var(--main-color);
+}
+
+.mob-soc-list{
+    display: flex;
+    gap: 20px;
+    margin-top: 64px;
+}
+
+.mob-soc-item{
+    list-style-type: none;
+    
+}
+
+.mob-soc-link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22/18);
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    
+}
+
+.button-close-mob{
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    top: 22px;
+    right: 26px;
+    border: none;
+    background-color: transparent;
+}
+
+.mob-menu-close{
+    fill: var(--second-text-color);
+}
+
+.mob-menu-close:focus,
+.mob-menu-close:hover{
+    fill: var(--accent-color);
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
