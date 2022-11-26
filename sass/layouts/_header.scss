@@ -59,17 +59,31 @@
 .menu {
     @include flex;
     display: none;
+    @media screen and (min-width:768px) {
+       display:flex;
+    }
 }
 
 .contact {
-    @include flex;
+    /*@include flex;*/
     display: none;
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: column;
+
+    }
 }
+
+   /* .contact:first-child{
+        color: red;
+        margin-bottom: 10px;
+    
+}*/
 
 .contact__link {
     @include flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /*padding-top: 32px;
+    padding-bottom: 32px;*/
     @include font(14px, 1.14, 500, 0.02em);
     color: var(--main-color);
     text-decoration: none;
@@ -84,11 +98,14 @@
 
 .contact__item {
     @include flex;
+    @media screen and (min-width:768px) {
+        /*margin-left: auto;*/
+    }
 }
 
-.contact .contact__item:not(:last-child) {
+/*.contact .contact__item:not(:last-child) {
     margin-right: 50px;
-}
+}*/
 
 .menu .menu__nav:not(:last-child) {
     margin-right: 50px;
@@ -112,6 +129,9 @@
     margin-bottom: auto;
     margin-right: 10px;
     padding: 0;
+    @media screen and (min-width:768px) {
+        display: none;
+    }
 }
 
 .menu__open:focus,
@@ -133,6 +153,9 @@
     height: 100vh;
     z-index: 1;
     background-color: #ECECEC;
+    @media screen and (min-width:768px) {
+        display: none;
+    }
 }
 
 .mob-menu-list{
