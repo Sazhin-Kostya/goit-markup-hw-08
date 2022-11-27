@@ -205,7 +205,7 @@ body {
 }
 .contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
-  fill: currentColor;
+  fill: var(--accent-color);
 }
 
 .contact__item {
@@ -223,7 +223,7 @@ body {
 
 .contact__svg {
   margin-right: 10px;
-  fill: var(--second-text-color);
+  fill: currentColor;
 }
 
 .menu__open {
