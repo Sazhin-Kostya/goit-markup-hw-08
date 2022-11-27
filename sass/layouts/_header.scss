@@ -127,7 +127,8 @@
 
 .contact__svg {
     margin-right: 10px;
-    fill: currentColor;
+    
+    fill: var(--second-text-color);
 }
 
 .menu__open{
@@ -142,7 +143,7 @@
     @media screen and (min-width:768px) {
         display: none;
     }
-    fill: var(--second-text-color);
+    
 }
 
 /*.menu__open:focus,
@@ -167,6 +168,9 @@
     @media screen and (min-width:768px) {
         display: none;
     }
+        
+                transition: opacity 300ms linear,
+                visibility 300ms linear;
 }
 
 .mob-menu-list{
