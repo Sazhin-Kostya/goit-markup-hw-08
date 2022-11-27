@@ -156,6 +156,7 @@
     height: 100vh;
     z-index: 1;
     background-color: #ECECEC;
+    overflow-y: scroll;
     @media screen and (min-width:768px) {
         display: none;
     }
