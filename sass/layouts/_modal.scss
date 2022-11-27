@@ -20,12 +20,7 @@
 }
 
 .modal {
-    /*position: absolute;*/
-   /* max-width: 100%;*/
     @media screen and (min-width:480px) {
-        /*width: 100%;
-        max-width: 450px;
-        min-height: 609px;*/
         width: 100%;
             max-width: 450px;
             position: absolute;
@@ -35,9 +30,6 @@
             min-height: 581px;
     }
     @media screen and (min-width:768px) {
-       /* width: 100%;
-        max-width: 450px;
-        min-height: 609px;*/
         width: 100%;
             max-width: 450px;
             position: absolute;
@@ -47,10 +39,6 @@
             min-height: 581px;
     }
     @media screen and (min-width:1200px) {
-       /* width: 100%;
-        max-width: 528px;
-        min-height: 581px;*/
-
         width: 100%;
             max-width: 528px;
             position: absolute;
@@ -59,14 +47,6 @@
             transform: translate(-50%, -50%);
             min-height: 581px;
     }
-    /*top: 50%;
-    left: 50%;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 300ms linear;*/
     padding: 40px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -235,8 +215,6 @@
 .modal-button {
     position: absolute;
     background-color: transparent;
-    /*top: 8px;
-    right: 8px;*/
     right: 23px;
     top: 101px;
     border-radius: 50%;

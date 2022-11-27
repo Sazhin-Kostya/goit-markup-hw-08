@@ -52,10 +52,6 @@
     @media screen and (min-width:768px) {
         bottom: 4px;
     }
-    /*@media screen and (min-width:1200px) {
-            bottom: 0;
-    }*/
-
 }
 
 .header__contact {
@@ -66,9 +62,7 @@
 
 }
 
-/*.header__contact:not(:first-child){
-    gap: 114px;
-}*/
+
 
 
 
@@ -81,7 +75,6 @@
 }
 
 .contact {
-    /*@include flex;*/
     display: none;
     @media screen and (min-width:768px) {
         display: flex;
@@ -98,8 +91,6 @@
 
 .contact__link {
     @include flex;
-    /*padding-top: 32px;
-    padding-bottom: 32px;*/
     @include font(14px, 1.14, 500, 0.02em);
     color: var(--main-color);
     text-decoration: none;
@@ -127,7 +118,6 @@
 
 .contact__svg {
     margin-right: 10px;
-    
     fill: var(--second-text-color);
 }
 
@@ -146,10 +136,11 @@
     
 }
 
-/*.menu__open:focus,
-.menu__open:hover{
+.contact__svg:focus,
+.contact__svg:hover{
     fill: var(--accent-color);
-}*/
+}
+
  
 .mob-menu{
     position: fixed;
