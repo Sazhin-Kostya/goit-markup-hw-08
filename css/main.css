@@ -252,11 +252,10 @@ body {
   }
 }
 
-.menu__open:focus,
-.menu__open:hover {
-  fill: var(--accent-color);
-}
-
+/*.menu__open:focus,
+.menu__open:hover{
+    fill: var(--accent-color);
+}*/
 .mob-menu {
   position: fixed;
   display: flex;
