@@ -142,6 +142,7 @@
     @media screen and (min-width:768px) {
         display: none;
     }
+    fill: var(--second-text-color);
 }
 
 .menu__open:focus,
