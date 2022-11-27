@@ -1,13 +1,19 @@
 .header {
     position: relative;
+    
     background-color: var(--main-bg);
     border-bottom: 1px solid #ECECEC;
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+        height: 80px;
+    }
 }
 
 .header__nav {
-    align-self: center;
+    display: flex;
+    align-items: baseline;
 }
-
 
 
 .link {
@@ -43,6 +49,12 @@
     background-color: currentColor;
     border-radius: 2px;
     bottom: 0;
+    @media screen and (min-width:768px) {
+        bottom: 4px;
+    }
+    /*@media screen and (min-width:1200px) {
+            bottom: 0;
+    }*/
 
 }
 
@@ -50,11 +62,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 40px;
+
 }
 
-.header__nav {
-    display: flex;
-}
+/*.header__contact:not(:first-child){
+    gap: 114px;
+}*/
+
+
 
 .menu {
     @include flex;
@@ -69,16 +85,16 @@
     display: none;
     @media screen and (min-width:768px) {
         display: flex;
-        flex-direction: column;
-
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    @media screen and (min-width:1200px) {
+        flex-wrap: nowrap;
+            gap: 40px;
     }
 }
 
-   /* .contact:first-child{
-        color: red;
-        margin-bottom: 10px;
-    
-}*/
+
 
 .contact__link {
     @include flex;
@@ -98,14 +114,8 @@
 
 .contact__item {
     @include flex;
-    @media screen and (min-width:768px) {
-        /*margin-left: auto;*/
-    }
+    
 }
-
-/*.contact .contact__item:not(:last-child) {
-    margin-right: 50px;
-}*/
 
 .menu .menu__nav:not(:last-child) {
     margin-right: 50px;
