@@ -58,11 +58,11 @@
 
 .hero__title {
     margin-bottom: 30px;
-    @include font(42px, 1.61, 900, 0.06em);
+    @include font(26px, 1.61, 900, 0.06em);
     color: var(--main-bg);
     text-align: center;
     text-transform: uppercase;
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:1200px) {
         @include font(44px, 1.36, 900, 0.06em)
     }
     
@@ -70,7 +70,7 @@
 
 .hero__button {
     border-radius: 4px;
-    max-width: 200px;
+    width: 200px;
     height: 50px;
     font-family: Roboto, sans-serif;
     @include font(16px, 1.87, 700, 0.06em);

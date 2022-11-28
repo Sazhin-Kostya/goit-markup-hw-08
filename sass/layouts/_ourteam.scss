@@ -12,12 +12,16 @@
     }
     @media screen and (min-width:1200px) {
         flex-wrap: nowrap; 
+        margin-top: 50px;
     }
 }
 
 .our-team-title {
     display: inline-block;
-    @include font(36px, 1.16, 700, 0.03em);
+    @media screen and (min-width:1200px) {
+        @include font(36px, 1.16, 700, 0.03em);
+    }
+    @include font(28px, 1.17, 700, 0.03em);
     color: var(--second-text-color);
 }
 
@@ -29,6 +33,9 @@
     border-radius: 0px 0px 4px 4px;
     @media screen and (min-width:768px) {
         flex-basis: calc(100% / 2 - 15px);
+    }
+    @media screen and (min-width:1200px) {
+        margin-top: 0;
     }
 }
 

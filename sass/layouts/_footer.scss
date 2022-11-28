@@ -84,6 +84,9 @@
     margin-top: 60px;
     text-transform: uppercase;
     color: var(--hero-foot-bg);
+    @media screen and (min-width:768px) {
+        margin-top: 0;
+    }
 }
 
 .foot-social-list {
@@ -170,6 +173,9 @@
     margin-top: 60px;
     text-transform: uppercase;
     color: var(--hero-foot-bg);
+    @media screen and (min-width:1200px) {
+        margin-top: 0;
+    }
 }
 
 .foot-button {

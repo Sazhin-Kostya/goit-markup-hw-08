@@ -196,12 +196,20 @@ body {
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--main-color);
   text-decoration: none;
   transition: color var(--trans-dur) var(--transition-timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
 }
 .contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
@@ -435,14 +443,14 @@ body {
 .hero__title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 42px;
+  font-size: 26px;
   line-height: 1.61;
   letter-spacing: 0.06em;
   color: var(--main-bg);
   text-align: center;
   text-transform: uppercase;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     font-weight: 900;
     font-size: 44px;
@@ -453,7 +461,7 @@ body {
 
 .hero__button {
   border-radius: 4px;
-  max-width: 200px;
+  width: 200px;
   height: 50px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -502,7 +510,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     min-height: 581px;
   }
 }
@@ -513,7 +521,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     min-height: 581px;
   }
 }
@@ -524,7 +532,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     min-height: 581px;
   }
 }
@@ -811,15 +819,15 @@ body {
 
 .benefits__block {
   width: 100%;
+  /* @media screen and (min-width:1200px) {
+    &:not(:last-child) {
+           margin-right: 30px;
+       }
+   }*/
 }
 @media screen and (min-width: 768px) {
   .benefits__block {
     flex-basis: calc(50% - 15px);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .benefits__block:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
@@ -891,16 +899,25 @@ body {
 @media screen and (min-width: 1200px) {
   .our-team-list {
     flex-wrap: nowrap;
+    margin-top: 50px;
   }
 }
 
 .our-team-title {
   display: inline-block;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .our-team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
 
 .our-team-card {
@@ -913,6 +930,11 @@ body {
 @media screen and (min-width: 768px) {
   .our-team-card {
     flex-basis: calc(50% - 15px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team-card {
+    margin-top: 0;
   }
 }
 
@@ -975,11 +997,19 @@ body {
 
 .regular-customers-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .regular-customers-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
 
 .regular-customers-list {
@@ -987,11 +1017,12 @@ body {
   flex-wrap: wrap;
   list-style: none;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 @media screen and (min-width: 1200px) {
   .regular-customers-list {
     flex-wrap: nowrap;
+    margin-top: 50px;
   }
 }
 
@@ -1247,6 +1278,11 @@ body {
   text-transform: uppercase;
   color: var(--hero-foot-bg);
 }
+@media screen and (min-width: 768px) {
+  .foot-social-title {
+    margin-top: 0;
+  }
+}
 
 .foot-social-list {
   display: flex;
@@ -1348,6 +1384,11 @@ body {
   margin-top: 60px;
   text-transform: uppercase;
   color: var(--hero-foot-bg);
+}
+@media screen and (min-width: 1200px) {
+  .foot-email-title {
+    margin-top: 0;
+  }
 }
 
 .foot-button {
