@@ -762,8 +762,10 @@ body {
   background-color: var(--main-bg);
 }
 
-.benefits__section {
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .benefits__section {
+    padding-bottom: 0;
+  }
 }
 
 .benefits__title {
@@ -794,7 +796,7 @@ body {
 
 .benefits__item {
   margin-top: 10px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px;*/
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

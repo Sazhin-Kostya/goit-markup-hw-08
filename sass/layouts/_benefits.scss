@@ -3,7 +3,10 @@
 }
 
 .benefits__section {
-    padding-bottom: 0;
+    @media screen and (min-width:1200px) {
+        padding-bottom: 0;
+    }
+   
 }
 
 .benefits__title {
@@ -30,7 +33,7 @@
 
 .benefits__item {
     margin-top: 10px;
-    margin-bottom: 30px;
+   /* margin-bottom: 30px;*/
     @include font(14px, 1.71, null, 0.03em);
 }
 
